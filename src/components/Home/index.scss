@@ -14,8 +14,8 @@
 
   h1 {
     color: #fff;
-    font-size: 66px;
-    line-height: 80px;
+    font-size: 8vh;
+    line-height: 100px;
     font-family: 'Coolvetica';
     font-weight: 400;
 
@@ -26,7 +26,6 @@
       font-size: 18px;
       position: absolute;
       margin-top: -40px;
-      // left: 10px;
       opacity: 0.6;
     }
 
@@ -38,15 +37,14 @@
       position: absolute;
       margin-top: 18px;
       margin-left: 20px;
-      animation: fadeIn 1s 1.7s backwards;
       opacity: 0.6;
     }
 
     img {
       margin-left: 20px;
       opacity: 0;
-      width: 65px;
-      height: 70px;;
+      // width: 65px;
+      height: 9vh;;
       animation: rotateIn 1s linear both;
       animation-delay: 1.4s;
     }
@@ -54,9 +52,9 @@
 
   h2 {
     color: #8d8d8d;
-    margin-top: 20px;
+    // margin-top: 0px;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 2vh;
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
@@ -84,8 +82,9 @@
 
   img.self-picture {
     position: relative;
-    height: 600px;
-    width: auto;
+    //width: 80%;  /* Image will shrink as the screen gets smaller */
+    height: 80vh; /* Maintain the aspect ratio */
+    max-width: 500px;
     border-radius: 80%;
     opacity: 0;
     animation: fadeInAnimation 6s 1s forwards;

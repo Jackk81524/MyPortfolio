@@ -9,8 +9,9 @@ import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['a', 'c', 'k', ' ','K', 'n', 'o', 'x', ',']
-  const jobArray = ['S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
+  const nameArray = ['a', 'c', 'k', ' ','K', 'n', 'o', 'x', '!']
+  const welcomeArray = ['W', 'e', 'l', 'c', 'o', 'm', 'e', ' ', 't', 'o', ' ', 'm', 'y']
+  const welcomeArray2 = ['P','e', 'r','s','o','n','o','l',' ','P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o','!']
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -39,8 +40,14 @@ const Home = () => {
           <br />
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={jobArray}
+            strArray={welcomeArray}
             idx={18}
+          />
+          <br />
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={welcomeArray2}
+            idx={17}
           />
         </h1>
         <h2>Full Stack Developer</h2>
