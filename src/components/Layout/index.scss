@@ -47,11 +47,16 @@
   .container.contact-page,
   .container.about-page,
   .container.portfolio-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     
       h1 {
-        font-size: 53px;
+        
         font-family: 'Coolvetica';
-        color: #ffaa00;
+        color: #fff;
+        font-size: 8vh;
         font-weight: 400;
         margin-top: 0;
         position: relative;
@@ -85,8 +90,8 @@
       }
   
       p {
-        font-size: 13px;
-        color: #fff;
+        font-size: 2.3vh;
+        color: #dbd9d9;
         font-family: sans-serif;
         font-weight: 300;
         max-width: fit-content;
@@ -104,10 +109,7 @@
       }
   
     .text-zone {
-      position: absolute;
-      left: 10%;
-      top: 50%;
-      transform: translateY(-50%);
+      position: relative;
       width: 35%;
       vertical-align: middle;
       display: table-cell;
@@ -116,7 +118,7 @@
   
     .text-animate-hover {
       &:hover {
-        color: #fff;
+        color: #ffaa00;
       }
     }
   }
@@ -139,7 +141,7 @@
           transform: none;
           width: 100%;
           display: block;
-          padding: 20px;
+          // padding: 0px;
           box-sizing: border-box;
         }
       }
@@ -162,9 +164,6 @@
     }
   
     .stage-cube-cont {
-      position: initial;
-      width: 100%;
-      height: 0%;
-      overflow: visible;
+      position: relative;
     }
   }

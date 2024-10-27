@@ -28,13 +28,13 @@ const About = () => {
                         />
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Hi, I’m Jack Knox! I graduated from Purdue University in May 2024 with a Bachelor’s degree in Computer Engineering, and I currently work as an Applications Developer. I am from Long Island, New York, and I love to travel, stay active, and listen to music.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        I’ve gained experience with a wide range of programming languages and frameworks, specializing in C#, .NET, C, C++, TypeScript, Angular, React, JavaScript, Python, and Flask. This website itself is built with JavaScript and React—a project I took on to showcase my skills and creativity!
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        My passion for technology’s rapid evolution inspired me to become a software developer, driving me to continually learn and grow in this dynamic field. I strive to stay on the cutting edge by mastering new frameworks, tackling challenging projects, and exploring emerging trends. With each step, I aim to hone my craft and make a meaningful impact on the world through innovative technology.
                     </p>
                 </div>
 
