@@ -45,12 +45,12 @@
   }
   
   .container.contact-page,
-  .container.about-page,
-  .container.portfolio-page {
+  .container.about-page
+  {
     display: flex;
-    justify-content: center;
     align-items: center;
     position: relative;
+    justify-content: center;
     
       h1 {
         
@@ -123,47 +123,3 @@
     }
   }
   
-  @media screen and (max-width: 1200px) {
-    .page {
-      position: initial;
-    }
-  
-    .container {
-      position: initial;
-      height: auto;
-      min-height: auto;
-  
-      &.contact-page,
-      &.about-page,
-      &.portfolio-page {
-        .text-zone {
-          position: initial;
-          transform: none;
-          width: 100%;
-          display: block;
-          // padding: 0px;
-          box-sizing: border-box;
-        }
-      }
-  
-      &.portfolio-page {
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-  
-        h1.page-title {
-          margin-left: 20px;
-          margin-top: 20px;
-        }
-  
-        .image-box {
-          height: 200px;
-          max-width: calc(50% - 10px);
-        }
-      }
-    }
-  
-    .stage-cube-cont {
-      position: relative;
-    }
-  }
