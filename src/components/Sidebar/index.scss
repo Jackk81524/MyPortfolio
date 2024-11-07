@@ -7,6 +7,31 @@
     z-index: 3;
     min-height: 500px;
     margin-right: 20px;
+
+    ul {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+
+        li {
+            a {
+                padding: 7px 0;
+                display: block;
+                font-size: 25px;
+                line-height: 16px;
+
+                &:hover svg {
+                    color: #ffaa00;
+                }
+            }
+        }
+    }
 }
 
 .logo {
@@ -99,27 +124,4 @@ nav {
     }
 }
 
-ul {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: block;
-    display: block;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    margin: 0;
 
-    li {
-        a {
-            padding: 7px 0;
-            display: block;
-            font-size: 25px;
-            line-height: 16px;
-
-            &:hover svg {
-                color: #ffaa00;
-            }
-        }
-    }
-}
