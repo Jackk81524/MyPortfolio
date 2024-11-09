@@ -3,6 +3,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
+import SelfPicture from '../../assets/images/Self-Pic-2.jpg'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -35,6 +36,13 @@ const About = () => {
                     <p>
                         My passion for technology’s rapid evolution inspired me to become a software developer, driving me to continually learn and grow in this dynamic field. I strive to stay on the cutting edge by mastering new frameworks, tackling challenging projects, and exploring emerging trends. With each step, I aim to hone my craft and make a meaningful impact on the world through innovative technology.
                     </p>
+                </div>
+                <div>
+                    <img
+                    className='self-picture'
+                    src={SelfPicture}
+                    alt="Picture of Me"
+                    />
                 </div>
             </div>
             <Loader type="pacman" />

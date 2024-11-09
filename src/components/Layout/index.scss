@@ -110,7 +110,7 @@
   
     .text-zone {
       position: relative;
-      width: 35%;
+      width: 40%;
       vertical-align: middle;
       display: table-cell;
       max-height: 90%;
@@ -121,5 +121,17 @@
         color: #ffaa00;
       }
     }
+
+    img.self-picture {
+      position: relative;
+      left: 25%;
+      height: 80vh; /* Maintain the aspect ratio */
+      max-width: 500px;
+      border-radius: 90%;
+      opacity: 0;
+      animation: fadeInAnimation 6s 1s forwards;
+      margin:50px;
+    }
   }
+  
   

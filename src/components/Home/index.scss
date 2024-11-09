@@ -5,11 +5,9 @@
   position: relative;
 
   .text-zone {
-    left: 10%;
     top: 50%;
     width: 50%;
     max-height: 90%;
-    // margin: 10px;
   }
 
   h1 {
@@ -82,7 +80,6 @@
 
   img.self-picture {
     position: relative;
-    //width: 80%;  /* Image will shrink as the screen gets smaller */
     height: 80vh; /* Maintain the aspect ratio */
     max-width: 500px;
     border-radius: 80%;

@@ -24,11 +24,11 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
+      .sendForm('service_djvs7ci', 'template_5zm582q', form.current, '-J-v4--DwGo5B-cM_')
       .then(
         () => {
           alert('Message successfully sent!')
-          window.location.reload(false)
+          form.current.reset()
         },
         () => {
           alert('Failed to send the message, please try again')
