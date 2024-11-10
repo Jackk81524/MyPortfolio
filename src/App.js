@@ -7,7 +7,7 @@ import Contact from './components/Contacts';
 import React, { useState, useEffect } from 'react';
 
 function App() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false); //test
 
   useEffect(() => {
     const checkDevice = () => {
