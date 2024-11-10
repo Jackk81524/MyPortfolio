@@ -27,6 +27,7 @@ const Contact = () => {
       .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_USER_ID)
       .then(
         () => {
+          console.log(process.env.REACT_APP_SERVICE_ID)
           alert('Message successfully sent!')
           form.current.reset()
         },
