@@ -43,6 +43,10 @@
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
   }
+
+  .container.contact-page {
+    left: 5%;
+  }
   
   .container.contact-page,
   .container.about-page
@@ -124,7 +128,7 @@
 
     img.self-picture {
       position: relative;
-      left: 25%;
+      left: 20%;
       height: 80vh; /* Maintain the aspect ratio */
       max-width: 500px;
       border-radius: 90%;
@@ -133,5 +137,4 @@
       margin:50px;
     }
   }
-  
   
