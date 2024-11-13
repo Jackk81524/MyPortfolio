@@ -52,6 +52,7 @@
   .container.contact-page,
   .container.about-page {
     align-items: center;
+    justify-content: center;
 
     .text-zone {
       position: relative;
@@ -70,8 +71,6 @@
   {
     display: flex;
     position: relative;
-    justify-content: center;
-    
       h1 {
         
         font-family: 'Coolvetica';

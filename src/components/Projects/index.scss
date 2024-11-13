@@ -1,13 +1,19 @@
 .projects-page {
-    right :2%;
+    right: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    top: 15%;
+
     .text-zone {
         width: 85%;
-        top: 10%;
         position: relative;
-        justify-content:top;
-        display: table-cell;
         max-height: 90%;
         text-align: center;
+    }
+
+    .preview {
+        position: relative;
     }
 
 }
