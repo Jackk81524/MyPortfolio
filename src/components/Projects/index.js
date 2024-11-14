@@ -1,9 +1,7 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
-import SelfPicture from '../../assets/images/Self-Pic-2.jpg'
 import ProjectPreview from './Projects-Preview'
 
 const Projects = () => {
@@ -31,7 +29,12 @@ const Projects = () => {
                     <p>I enjoy experimenting and learning through personal projects, which allow me to explore new technologies and push my skills further. This website itself is one such project—a dynamic, responsive platform that I built using React. It serves as both my digital portfolio and a space to showcase my work,</p>
                 </div>
                 <div className='preview'>
-                    <ProjectPreview/>
+                <ProjectPreview 
+                    title="Personal Webpage and Portfolio"
+                    description="This is the site you're on! It is designed to showcase my web development skills."
+                    technology="JavaScript and ReactJS"
+                    id="1"
+                />
                 </div>
             </div>
             <Loader type="pacman" />

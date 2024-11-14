@@ -1,20 +1,21 @@
+import { Link } from 'react-router-dom'
 import './index.scss'
 
-const ProjectPreview = () => {
+const ProjectPreview = ({ title, description, technology, id }) => {
 
     return (
         <>
-            <div className='preview-box'>
+            <Link to={`/project/${id}`} className='preview-box'>
                 <div className='preview-text'>
                     <div className='title'>
-                        Personal Webpage <br/>and Portfolio
+                        {title}
                     </div>
                     <div className='body'>
-                       <p>Description: This is the site you're on! It is designed to showcase my web development skills.</p>
-                       <p>Technology: Javascript and ReactJS</p>
+                       <p>Description: {description}</p>
+                       <p>Technology: {technology}</p>
                     </div>
                 </div>
-            </div>
+            </Link>
         </>
     )
 }
