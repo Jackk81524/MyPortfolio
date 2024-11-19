@@ -3,9 +3,12 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import ProjectPreview from './Projects-Preview'
+import previewData from './preview-data';
+
 
 const Projects = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+    const projects = previewData;
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
@@ -29,12 +32,15 @@ const Projects = () => {
                     <p>I enjoy experimenting and learning through personal projects, which allow me to explore new technologies and push my skills further. This website itself is one such project—a dynamic, responsive platform that I built using React. It serves as both my digital portfolio and a space to showcase my work,</p>
                 </div>
                 <div className='preview'>
-                <ProjectPreview 
-                    title="Personal Webpage and Portfolio"
-                    description="This is the site you're on! It is designed to showcase my web development skills."
-                    technology="JavaScript and ReactJS"
-                    id="1"
-                />
+                    {projects.map((project, index) => (
+                        <ProjectPreview
+                        key={index} // Always include a unique key when rendering lists
+                        title={project.title}
+                        description={project.description}
+                        technology={project.technology}
+                        id={index}
+                        />
+                    ))}   
                 </div>
             </div>
             <Loader type="pacman" />
