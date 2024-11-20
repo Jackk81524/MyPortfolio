@@ -34,6 +34,7 @@ const Projects = () => {
                 <div className='preview'>
                     {projects.map((project, index) => (
                         <ProjectPreview
+                        className='preview-item'
                         key={index} // Always include a unique key when rendering lists
                         title={project.title}
                         description={project.description}
