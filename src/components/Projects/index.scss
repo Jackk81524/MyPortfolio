@@ -1,0 +1,24 @@
+.projects-page
+ {
+    right: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    top: 15%;
+
+    .text-zone {
+        width: 85%;
+        position: relative;
+        max-height: 90%;
+        text-align: center;
+    }
+
+    .preview {
+        display: flex;
+        position: relative;
+        gap: 5%;
+        width: 100%;
+        justify-content: center;
+    }   
+
+}

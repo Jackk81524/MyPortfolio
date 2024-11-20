@@ -5,9 +5,12 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contacts';
 import React, { useState, useEffect } from 'react';
+import Projects from './components/Projects';
+import ProjectView from './components/Projects/Individual-Project';
+import ProjectDetails from './components/Projects/Individual-Project';
 
 function App() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false); //test
 
   useEffect(() => {
     const checkDevice = () => {
@@ -39,6 +42,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="project/:projectId" element={<ProjectDetails />} />
         </Route>
       </Routes>
     </>

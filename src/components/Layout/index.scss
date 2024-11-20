@@ -44,18 +44,34 @@
     animation-delay: 1s;
   }
 
+
   .container.contact-page {
     left: 5%;
   }
-  
+
   .container.contact-page,
-  .container.about-page
+  .container.about-page {
+    align-items: center;
+    justify-content: center;
+
+    .text-zone {
+      position: relative;
+      width: 40%;
+      vertical-align: middle;
+      display: table-cell;
+      max-height: 90%;
+    }
+  }
+  
+
+
+  .container.contact-page,
+  .container.about-page,
+  .container.projects-page,
+  .container.individual-project-page
   {
     display: flex;
-    align-items: center;
     position: relative;
-    justify-content: center;
-    
       h1 {
         
         font-family: 'Coolvetica';
@@ -64,8 +80,6 @@
         font-weight: 400;
         margin-top: 0;
         position: relative;
-        margin-bottom: 40px;
-        left: -10px;
   
         &:before {
           content: '<h1>';
@@ -111,14 +125,6 @@
           animation-delay: 1.3s;
         }
       }
-  
-    .text-zone {
-      position: relative;
-      width: 40%;
-      vertical-align: middle;
-      display: table-cell;
-      max-height: 90%;
-    }
   
     .text-animate-hover {
       &:hover {
