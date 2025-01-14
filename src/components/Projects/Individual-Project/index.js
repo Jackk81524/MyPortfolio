@@ -38,9 +38,16 @@ const ProjectDetails = () => {
                     </h1>
                     <h2 className='tech-box'>{project.technology}</h2>
                     <p>{project.description}</p>
-                    <a href="https://github.com/Jackk81524/MyPortfolio" className="flat-button">
-                        Github
-                    </a>
+                    <div className='multiple-buttons'>
+                        {project.video && (
+                            <a href={project.video} className="flat-button">
+                                Video Overview
+                            </a>
+                        )}
+                        <a href={project.repo} className="flat-button">
+                            Github
+                        </a>
+                    </div>
                 </div>
                 <div className='logo-space'>
                     <img
