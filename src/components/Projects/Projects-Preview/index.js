@@ -11,8 +11,8 @@ const ProjectPreview = ({ title, description, technology, id }) => {
                         {title}
                     </div>
                     <div className='body'>
-                       <p>Description: {description}</p>
-                       <p>Technology: {technology}</p>
+                       <p>{description}</p>
+                       <p>{technology}</p>
                     </div>
                 </div>
             </Link>

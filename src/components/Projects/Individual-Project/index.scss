@@ -6,14 +6,10 @@
 
     .text-zone {
         top: 50%;
-        width: 40%;
+        width: 50%;
         max-height: 90%;
         text-align: left;
         margin: 5%
-    }
-
-    p {
-        margin-top: 6%;
     }
 
     .flat-button {
@@ -36,6 +32,11 @@
         }
     }
 
+    .multiple-buttons a {
+        margin-right: 20px; 
+    }
+    
+
     h2 {
         color: #8d8d8d;
         font-weight: 400;
@@ -48,12 +49,6 @@
     .logo-space{
         width: 30%;
         margin: 5%;
-        img.my-logo {
-            position: relative;
-            height: 70vh; 
-            max-width: 500px;
-            opacity: 0;
-            animation: fadeInAnimation 3s 1s forwards;
-        }
+        animation: fadeInAnimation 3s 1s forwards;
     }
 }
