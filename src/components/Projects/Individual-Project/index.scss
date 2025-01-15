@@ -12,10 +12,6 @@
         margin: 5%
     }
 
-    p {
-        margin-top: 6%;
-    }
-
     .flat-button {
         color: #ffaa00;
         font-size: 13px;
@@ -53,12 +49,6 @@
     .logo-space{
         width: 30%;
         margin: 5%;
-        img.my-logo {
-            position: relative;
-            height: 70vh; 
-            max-width: 500px;
-            opacity: 0;
-            animation: fadeInAnimation 3s 1s forwards;
-        }
+        animation: fadeInAnimation 3s 1s forwards;
     }
 }

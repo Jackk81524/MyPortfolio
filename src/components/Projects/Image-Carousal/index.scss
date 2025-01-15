@@ -1,0 +1,45 @@
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .labels {
+        color: white;
+        font-size: 2.5vh;
+        font-weight: 100;
+
+        &:hover {
+            animation: rubberBand 1s;
+            color: #ffaa00;
+        }
+    }
+
+    .carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto;
+
+        .image-container {
+            img {
+                max-width: 500px;
+                height: 70vh;
+            }
+        }
+
+        .arrow {
+            background-color: transparent;
+            border: none;
+            font-size: 4vh;
+            cursor: pointer;
+            padding: 30px;
+            color: white; 
+
+            &:hover {
+                animation: rubberBand 1s;
+                color: #ffaa00;
+            }
+        }
+    }
+}

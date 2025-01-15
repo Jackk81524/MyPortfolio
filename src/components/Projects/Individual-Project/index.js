@@ -6,6 +6,7 @@ import Loader from 'react-loaders';
 import AnimatedLetters from '../../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import Logo from '../../../assets/images/J-logo.png'
+import ImageCarousel from '../Image-Carousal';
 
 const ProjectDetails = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -37,7 +38,9 @@ const ProjectDetails = () => {
                         ))}
                     </h1>
                     <h2 className='tech-box'>{project.technology}</h2>
-                    <p>{project.description}</p>
+                    {project.description.map((paragraph, index) => (
+                        <p className='description' key={index}>{paragraph}</p>
+                    ))}
                     <div className='multiple-buttons'>
                         {project.video && (
                             <a href={project.video} className="flat-button">
@@ -50,11 +53,7 @@ const ProjectDetails = () => {
                     </div>
                 </div>
                 <div className='logo-space'>
-                    <img
-                        className='my-logo'
-                        src={project.content}
-                        alt="Picture of Me"
-                    />
+                    <ImageCarousel images={project.content} labels={project.labels} className='my-logo' />
                 </div>
             </div>
             <Loader type="pacman" />
