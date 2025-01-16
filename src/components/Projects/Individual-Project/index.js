@@ -31,7 +31,7 @@ const ProjectDetails = () => {
                                 <AnimatedLetters
                                     letterClass={letterClass}
                                     strArray={titlePart} 
-                                    idx={12}
+                                    idx={9}
                                 />
                                 <br/>
                             </div>
@@ -45,6 +45,11 @@ const ProjectDetails = () => {
                         {project.video && (
                             <a href={project.video} className="flat-button">
                                 Video Overview
+                            </a>
+                        )}
+                        {project.site && (
+                            <a href={project.site} className="flat-button">
+                                View Site Here
                             </a>
                         )}
                         <a href={project.repo} className="flat-button">

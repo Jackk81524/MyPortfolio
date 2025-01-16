@@ -6,6 +6,12 @@ import Sets from '../../../assets/images/ss-sets.png';
 import Social from '../../../assets/images/ss-social.png';
 import Workouts from '../../../assets/images/ss-workouts.png';
 
+import Picks from '../../../assets/images/picks.png';
+import Standings from '../../../assets/images/standings.png';
+import AddGame from '../../../assets/images/setgame.png';
+import AddWeek from '../../../assets/images/setweek.png';
+import SetResult from '../../../assets/images/setresult.png';
+
 
 const projectData = {
     0: {
@@ -30,6 +36,15 @@ const projectData = {
       content: [Login, Workouts, Excercise, Sets, Achieve, Social],
       labels: ["Authentication", "Workoout Management: Muscle Group", "Workoout Management: Exercise", "Workoout Management: Weights/Sets", "Gamified Achievements", "Social Activity"]
     },
+    2: {
+      title: [['F', 'o', 'o', 't', 'b', 'a', 'l', ' ', 'P', 'l', 'a', 'y', 'o', 'f', 'f', ' ', 'P', 'i', 'c', 'k', 's']],
+      description: ["My friends and I have always been bonded by our love for football. Going back to elementary school, we'd eagerly pick the winners of playoff games and track the results on coloring paper. As we got older, the tradition continued—though it transitioned to a clunky Excel spreadsheet! It wasn't the smoothest, but it kept the fun alive. This year, I decided to combine my software development skills with that tradition and create an easy-to-use website that allows us to submit our picks and automatically track the standings, all while keeping the spirit of friendly competition alive.", "This website is built with a React frontend that provides a dynamic, responsive user experience, while the backend is powered by Node.js and Express, ensuring efficient handling of requests and seamless integration with the frontend. Data is securely stored and managed using Google Firestore, offering a scalable NoSQL database solution for real-time data synchronization and reliable performance.", "Note: This app is fully functional from a web browser, but the UI was designed to be used on a mobile device."],
+      technology: "JavaScript, Node.js, Express.js, React",
+      repo: "https://github.com/Jackk81524/PlayoffPicks",
+      site: "https://playoff-picks-client.vercel.app/login",
+      content: [Picks, Standings],
+      labels: ["Picks Selection", "Standings"]
+    }
   };
   
   export default projectData;
